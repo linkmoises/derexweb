@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="165.29167mm"
-   height="53.814217mm"
-   viewBox="0 0 165.29167 53.814217"
+   width="109.92012mm"
+   height="34.749447mm"
+   viewBox="0 0 165.292 52.25436"
    version="1.1"
    id="svg5"
    inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
@@ -20,19 +20,21 @@
      borderopacity="1.0"
      inkscape:showpageshadow="false"
      inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
+     inkscape:pagecheckerboard="false"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.8489049"
-     inkscape:cx="301.52984"
-     inkscape:cy="70.582321"
+     inkscape:cx="301.25941"
+     inkscape:cy="70.852752"
      inkscape:window-width="1366"
-     inkscape:window-height="742"
+     inkscape:window-height="699"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     shape-rendering="auto"
+     borderlayer="true" />
   <defs
      id="defs2" />
   <g

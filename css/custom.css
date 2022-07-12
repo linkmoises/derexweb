@@ -1,0 +1,44 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+#header-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc( 100% + 10px );
+  z-index: -1;
+  background-image: url(../images/menu-bg.png) !important;
+  background-color: transparent !important;
+  background-repeat: repeat-x !important;
+  background-position: center bottom !important;
+  background-size: auto 100% !important;
+}
+
+:root {
+	--themecolor: #6953A8;
+	--p-f-family: "cute-aurora";
+
+	--bgcolor-1: #547794;
+	--color-1: #F6F3EE;
+
+	--bgcolor-2: #FABB7C;
+	--color-2: #9F4035;
+
+	--bgcolor-3: #cedab0;
+	--color-3: #3e540d;
+
+	--bgcolor-4: #EDDEE6;
+	--color-4: #A84B9D;
+
+}
+
+
+p {
+	font-size: 1.125rem;
+}
