@@ -5,8 +5,7 @@
 -----------------------------------------------------------------*/
 
 @font-face {
-    font-family: "cute-aurora";
-    src: url("CuteAurora.ttf") format("truetype");
+    font-family: "Patrick Hand";
     font-weight: normal;
     font-style: normal;
 }
@@ -53,6 +52,6 @@ h3,
 h4,
 #logo a,
 .font-primary  {
-    font-family: 'cute-aurora' !important;
+    font-family: 'Patrick Hand' !important;
     word-spacing: -3px;
 }
