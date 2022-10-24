@@ -43,15 +43,29 @@
 
 					<div class="post-grid row col-mb-30">
 
+<?php
+$featured_loop = new WP_Query(
+	array(
+		'post_type' => 'post',
+		'posts_per_page' => 6,
+		'cat' => array( 4, 5),
+		//'order' => 'ASC',
+		//'orderby' => 'name'
+	)
+);
+?>
+<?php if ( $featured_loop->have_posts() ): ?>
+<?php while ( $featured_loop->have_posts() ) : $featured_loop->the_post(); ?>
+<?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'medium_large');?>
             <div class="entry col-lg-4 col-md-6">
 							<div class="grid-inner shadow-sm card rounded-4">
-								<a href="<?php bloginfo("url"); ?>/dot.png" data-lightbox="image">
-									<img src="<?php bloginfo("url"); ?>/dot.png" alt="Image" class="card-img-top">
+								<a href="<?php the_permalink(); ?>">
+									<img src="<?php echo get_the_post_thumbnail_url( null, 'home-thumb' ); ?>" alt="<?php the_title(); ?>" class="card-img-top">
 								</a>
 								<div class="p-4">
 									<div class="entry-title">
 										<h5 class="fw-medium text-danger mb-3">Proyectos Básicos</h5>
-										<h3 class="nott ls0 h5"><a href="blog-single.html">El perro Dot</a></h3>
+										<h3 class="nott ls0 h5"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 									</div>
 									<div class="entry-content mt-4">
 										<p class="mb-0">Dot ha hecho un desastre de colores en la pantalla.</p>
@@ -59,6 +73,9 @@
 								</div>
 							</div>
 						</div>
+<?php endwhile; ?>
+<?php endif; ?>
+<?php wp_reset_query(); ?>
 
 					</div>
 				</div>
@@ -71,7 +88,6 @@
             <h2 class="color text-center h1 fw-bold mb-5 pb-2">Mi Blog</h2>
 
             <div class="row gutter-50">
-              <div class="col-lg-4">
 
 <?php
 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
@@ -80,6 +96,7 @@ $home_loop = new WP_Query(
 		'post_type' => 'post',
 		'posts_per_page' => 6,
 		'paged' => $paged,
+    'category__not_in' => array( 4 , 5 ),
 		//'order' => 'ASC',
 		//'orderby' => 'name'
 	)
@@ -87,6 +104,8 @@ $home_loop = new WP_Query(
 ?>
 <?php if ( $home_loop->have_posts() ) { ?>
 <?php while ( $home_loop->have_posts() ) : $home_loop->the_post(); ?>
+              <div class="col-lg-4">
+
                 <!-- Post Article -->
                 <div class="posts-md">
                   <div class="entry">
@@ -102,10 +121,10 @@ $home_loop = new WP_Query(
                     </div>
                   </div>
                 </div>
+              </div>
 <?php endwhile; ?>
 <?php } ?>
 
-              </div>
             </div>
 
           </div>
