@@ -33,7 +33,7 @@
 
     </div>
 
-    <div class="col-auto text-center mt-4 text-smaller pb-3 font-primary">
+    <div class="col-auto text-center mt-4 text-smaller pb-3">
       &#x1f12f; 2022 Algunos derechos reservados. Creado por Moisés Serrano y Derek Serrano
     </div>
 
@@ -53,6 +53,17 @@
 <!-- Footer Scripts
 ============================================= -->
 <script src="<?php bloginfo("url"); ?>/js/functions.js"></script>
+
+
+<!-- Google tag (gtag.js)
+============================================= -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-246851188-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-246851188-1');
+</script>
 
 </body>
 </html>

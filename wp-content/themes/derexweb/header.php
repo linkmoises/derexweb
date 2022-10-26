@@ -3,8 +3,8 @@
 <html dir="ltr" lang="es-PA">
 <head>
 
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="Derek Serrano" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Derek Serrano" />
 
 	<!-- Stylesheets
 	============================================= -->
@@ -15,15 +15,15 @@
 
   <link rel="stylesheet" href="<?php bloginfo("url"); ?>/css/style.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo("url"); ?>/css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="<?php bloginfo("url"); ?>/css/swiper.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo("url"); ?>/css/swiper.css" type="text/css" />
   <link rel="stylesheet" href="<?php bloginfo("url"); ?>/css/fonts.css" type="text/css" />
-	<link rel="stylesheet" href="<?php bloginfo("url"); ?>/css/dark.css" type="text/css" />
-	<link rel="stylesheet" href="<?php bloginfo("url"); ?>/css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="<?php bloginfo("url"); ?>/css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="<?php bloginfo("url"); ?>/css/magnific-popup.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo("url"); ?>/css/dark.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo("url"); ?>/css/font-icons.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo("url"); ?>/css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo("url"); ?>/css/magnific-popup.css" type="text/css" />
 
-	<link rel="stylesheet" href="<?php bloginfo("url"); ?>/css/custom.css" type="text/css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="<?php bloginfo("url"); ?>/css/custom.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Favicons
 	============================================= -->
@@ -32,9 +32,9 @@
   <link rel="apple-touch-icon" href="<?php bloginfo('url'); ?>/apple-touch-icon.png">
   <link rel="manifest" href="<?php bloginfo('url'); ?>/manifest.webmanifest">
 
-	<!-- Document Title
-	============================================= -->
-	<title>Derek Serrano <?php wp_title(); ?></title>
+  <!-- Document Title
+  ============================================= -->
+  <title>Derek Serrano <?php wp_title(); ?></title>
 
 </head>
 
@@ -91,7 +91,7 @@
 										<div>Inicio</div>
 									</a>
 								</li>
-                <li class="menu-item">
+                <!--<li class="menu-item">
 									<a class="menu-link" href="<?php bloginfo('url'); ?>/blog/">
 										<div>Archivo</div>
 									</a>
@@ -105,7 +105,7 @@
 									<a class="menu-link" href="<?php bloginfo('url'); ?>/robotica/">
 										<div>Robótica</div>
 									</a>
-								</li>
+								</li>-->
 								<li class="menu-item">
 									<a class="menu-link" href="<?php bloginfo('url'); ?>/sobre-mi/">
 										<div>Sobre mí</div>

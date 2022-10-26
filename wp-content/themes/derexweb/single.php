@@ -38,6 +38,18 @@ the_post(); ?>
 
 <?php the_content(); ?>
 
+<?php if( in_category( array( 'programacion', 'robotica' ) ) ): ?>
+              <div class="line my-5"></div>
+<?php $media = get_attached_media('application/zip', get_the_ID()); // Get image attachment(s) to the current Post
+foreach($media as $m) { ?>
+              <div class="mb-5">
+                <a href="<?php echo wp_get_attachment_url( $m->ID ); ?>">
+                  <button type="button" class="btn btn-success btn-lg btn3d"><i class="icon-download"></i> Descargar</button>
+                </a>
+              </div>
+<?php } ?>
+<?php endif; ?>
+
             </div><!-- .portfolio-single-content end -->
 
           </div>

@@ -60,15 +60,21 @@ $featured_loop = new WP_Query(
             <div class="entry col-lg-4 col-md-6">
 							<div class="grid-inner shadow-sm card rounded-4">
 								<a href="<?php the_permalink(); ?>">
+<?php if( has_term( 'basico', 'dificultad' ) ) { ?>
+                  <div class="sale-flash badge bg-success p-2">Básico</div>
+<?php } elseif ( has_term( 'intermedio', 'dificultad' ) ) { ?>
+                  <div class="sale-flash badge bg-warning p-2">Intermedio</div>
+<?php } elseif ( has_term( 'avanzado', 'dificultad' ) ) { ?>
+                  <div class="sale-flash badge bg-danger p-2">Avanzado</div>
+<?php } ?>
 									<img src="<?php echo get_the_post_thumbnail_url( null, 'home-thumb' ); ?>" alt="<?php the_title(); ?>" class="card-img-top">
 								</a>
 								<div class="p-4">
 									<div class="entry-title">
-										<h5 class="fw-medium text-danger mb-3">Proyectos Básicos</h5>
 										<h3 class="nott ls0 h5"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 									</div>
 									<div class="entry-content mt-4">
-										<p class="mb-0">Dot ha hecho un desastre de colores en la pantalla.</p>
+										<p class="mb-0"><?php the_excerpt(); ?></p>
 									</div>
 								</div>
 							</div>
