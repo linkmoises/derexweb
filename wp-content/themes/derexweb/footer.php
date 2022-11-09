@@ -50,6 +50,11 @@
 <script src="<?php bloginfo("url"); ?>/js/jquery.js"></script>
 <script src="<?php bloginfo("url"); ?>/js/plugins.min.js"></script>
 
+<script id='mkaz-code-syntax-prism-js-js-extra'>
+var prism_settings = {"pluginUrl":"https:\/\/derekserrano.com\/wp-content\/plugins\/code-syntax-block\/"};
+</script>
+<script src='https://derekserrano.com/wp-content/plugins/code-syntax-block/assets/prism/prism.js?ver=1666907352' id='mkaz-code-syntax-prism-js-js'></script>
+
 <!-- Footer Scripts
 ============================================= -->
 <script src="<?php bloginfo("url"); ?>/js/functions.js"></script>
