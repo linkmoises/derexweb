@@ -36,6 +36,8 @@
   ============================================= -->
   <title>Derek Serrano <?php wp_title(); ?></title>
 
+  <link rel='stylesheet' id='mkaz-code-syntax-prism-css-css'  href='https://derekserrano.com/wp-content/plugins/code-syntax-block/assets/prism-a11y-dark.css?ver=1666907352' type='text/css' media='all' />
+  
 </head>
 
 <body class="stretched block-nav-header-4">

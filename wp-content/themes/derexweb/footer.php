@@ -34,7 +34,7 @@
     </div>
 
     <div class="col-auto text-center mt-4 text-smaller pb-3">
-      &#x1f12f; 2022 Algunos derechos reservados. Creado por Moisés Serrano y Derek Serrano
+      &#x1f12f; 2022 Algunos derechos reservados. Creado por Moisés Serrano y Derek Serrano. <?php if ( is_user_logged_in() ) { ?><a href="<?php echo wp_logout_url(home_url()); ?>">Salir</a>.<?php } else { ?><a class="login" href="<?php echo esc_url( wp_login_url( home_url() ) ); ?>">Ingresar</a>.<?php }?>
     </div>
 
   </footer><!-- #footer end -->
@@ -54,16 +54,16 @@
 ============================================= -->
 <script src="<?php bloginfo("url"); ?>/js/functions.js"></script>
 
-
-<!-- Google tag (gtag.js)
-============================================= -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-246851188-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-246851188-1');
+<!-- Fragmento de código de Google Analytics añadido por Site Kit -->
+<script type='text/javascript' src='https://www.googletagmanager.com/gtag/js?id=UA-246851188-1' id='google_gtagjs-js' async></script>
+<script type='text/javascript' id='google_gtagjs-js-after'>
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('set', 'linker', {"domains":["derekserrano.com"]} );
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "UA-246851188-1", {"anonymize_ip":true});
+gtag("config", "G-80272Q09ES");
 </script>
-
+<!-- Final del fragmento de código de Google Analytics añadido por Site Kit -->
 </body>
 </html>
