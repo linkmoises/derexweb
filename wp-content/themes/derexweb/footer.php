@@ -18,7 +18,7 @@
             <div class="widget clearfix">
               <a href="#"><img src="<?php bloginfo("url"); ?>/images/logo.png" alt="Image" class="mx-auto footer-logo mb-3"></a>
               <span class="tetx-uppercase op-05 d-block">
-                Sitio web de STEM creado por Moisés Serrano y Derek Serrano.<br />
+                Sitio web sobre STEAM creado por Derek y Moisés Serrano.<br />
                 Mantenido por Derek Serrano y potenciado por WordPress.
               </span>
             </div>
@@ -34,7 +34,7 @@
     </div>
 
     <div class="col-auto text-center mt-4 text-smaller pb-3">
-      &#x1f12f; 2022 Algunos derechos reservados. Creado por Moisés Serrano y Derek Serrano. <?php if ( is_user_logged_in() ) { ?><a href="<?php echo wp_logout_url(home_url()); ?>">Salir</a>.<?php } else { ?><a class="login" href="<?php echo esc_url( wp_login_url( home_url() ) ); ?>">Ingresar</a>.<?php }?>
+      &#x1f12f; 2022 CC-BY-SA. Creado por Derek y Moisés Serrano. <?php if ( is_user_logged_in() ) { ?><a href="<?php echo get_admin_url(); ?>">Tablero</a> | <a href="<?php echo wp_logout_url(home_url()); ?>">Salir</a>.<?php } else { ?><a class="login" href="<?php echo esc_url( wp_login_url( home_url() ) ); ?>">Ingresar</a>.<?php }?>
     </div>
 
   </footer><!-- #footer end -->

@@ -213,3 +213,58 @@ p {
 	box-shadow: 0 0 0 1px #9a00cd inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
 	background-color: #bb39d7;
 }
+
+
+figure img {
+	width: 100%;
+	height: auto;
+}
+
+figure figcaption {
+	box-shadow:
+		inset 0px 11px 8px -10px #CCC;
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+.wp-block-image figcaption {
+	color: #777777;
+	margin-top: 0 !important;
+	margin-bottom: 2em !important;
+	font-family: sans-serif !important;
+	padding-top: 1em !important;
+}
+
+.wp-block-gallery figcaption {
+	font-family: sans-serif !important;
+}
+
+pre.wp-block-code {
+  margin-bottom: 2em !important;
+}
+
+.derexpost a {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: #EC407A !important;
+}
+
+.derexpost a::after {
+  content: "";
+  background: rgba(236, 64, 122, 0.25);
+  position: absolute;
+  left: 12px;
+  bottom: -6px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  z-index: -1;
+  transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+}
+
+.derexpost a:hover:after {
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 100%;
+}

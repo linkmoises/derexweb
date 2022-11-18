@@ -37,7 +37,7 @@
 
 					<div class="row justify-content-center mb-5">
 						<div class="col-xl-6 col-lg-8 text-center">
-							<h3 class="h1 fw-bold mb-3">Mis proyectos de STEM</h3>
+							<h3 class="h1 fw-bold mb-3">Mis proyectos de STEAM</h3>
 						</div>
 					</div>
 

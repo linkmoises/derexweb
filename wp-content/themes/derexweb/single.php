@@ -30,7 +30,7 @@ the_post(); ?>
 
             <!-- Portfolio Single Content
             ============================================= -->
-            <div class="col-lg-7 portfolio-single-content content-sticky">
+            <div class="col-lg-7 derexpost portfolio-single-content content-sticky">
 
               <!-- Portfolio Single - Description
               ============================================= -->
@@ -42,7 +42,7 @@ the_post(); ?>
 <?php $media = get_attached_media('application/zip', get_the_ID()); // Get image attachment(s) to the current Post
 foreach($media as $m) { ?>
               <div class="center my-5">
-                <a href="<?php echo wp_get_attachment_url( $m->ID ); ?>">
+                <a href="<?php echo wp_get_attachment_url( $m->ID ); ?>" download>
                   <button type="button" class="btn btn-success btn-lg btn3d"><i class="icon-download"></i> Descargar</button>
                 </a>
               </div>
